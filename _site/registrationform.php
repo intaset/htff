@@ -377,53 +377,21 @@ mail($your_email,$your_subject,$message,$your_headers);
   <div class="unit-spacer">
   <p class="body">For questions or comments regarding HTFF'18, please fill out the form below:</p>
 
-    <form action="../contactus.php" method="post" enctype="multipart/form-data" name="ContactForm">
-  
-  <table border="0" class="contact">
-    <tbody>
-      <tr>
-        <td class="label">Name:</td>
-        <td class="text"><span id="sprytextfield1">
-              <input name="Name" type="text" id="Name" size="40" autocomplete="off">
+   <form action="../contactus.php" method="post" enctype="multipart/form-data" name="ContactForm" class="cf">
+  <div class="half left cf">
+    <input style="margin-bottom:0.85em" type="text" name="Name" id="Name" placeholder="Name" required>
+    <input style="margin-bottom:0.85em" type="email" name="Email" id="Email" placeholder="Email address" required>
+    <input type="text" name="Subject" id="Subject" placeholder="Subject" required>
+  </div>
+  <div class="half right cf">
+    <textarea name="Message" type="text" rows="5" name="Message" id="Message" placeholder="Message" required></textarea>
+  </div><br><br>
+  <center class="full right cf"><div class="g-recaptcha" data-sitekey="6Lcw9g0TAAAAAH4HnF4X6DOA7PJZuSsfTj_YCH_2"></div></center>
+  <div class="cf">
+  <center><div class="full right cf"><input type="submit" name="Submit" value="Submit">
+    <input type="reset" name="Reset" value="Reset"></center></div>
+</div></div></form>
 
-              <span class="textfieldRequiredMsg">A value is required.</span></span></td>
-        </tr>
-
-        <tr>
-            <td class="label">Email:</td>
-            <td class="text"><span id="sprytextfield2">
-            <input name="Email" type="text" id="Email" size="40" autocomplete="off">
-            <span class="textfieldRequiredMsg">A value is required.</span><span class="textfieldInvalidFormatMsg">Invalid format.</span></span></td>
-          </tr>
-
-          <tr>
-            <td class="label">Confirm Email:</td>
-             <td class="text"><span id="spryconfirm4">
-              <input name="Confirm Email" type="text" id="Confirm Email" size="40" autocomplete="off">
-              <span class="confirmRequiredMsg">A value is required.</span><span class="confirmInvalidMsg">Emails don't match.</span></span></td>
-          </tr>
-
-          <tr>
-            <td class="label">Subject:</td>
-            <td class="text"><span id="sprytextfield3">
-              <input name="Subject" type="text" id="Subject" size="40" autocomplete="off">
-              <span class="textfieldRequiredMsg">A value is required.</span></span></td>
-          </tr>
-
-          <tr>
-            <td valign="top" class="label">Message:</td>
-            <td class="text"><span id="sprytextarea1">
-              <textarea name="Message" id="Message" cols="31" rows="10" autocomplete="off"></textarea>
-              <span class="textareaRequiredMsg">A value is required.</span></span>
-              <center>
-        <input type="submit" name="Submit" value="Submit" accept="image/jpeg">
-        <input type="reset" name="Reset" value="Reset"></center></td>
-          </tr>
-
-        </tbody></table><br>
-
-        
-</form>
     </div>
   </div>
   </div>
